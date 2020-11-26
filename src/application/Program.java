@@ -29,7 +29,10 @@ public class Program {
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}		
-		
+		System.out.println("\n=== TEST 4 : seller insert ===");
+		Seller newSeller = new Seller(null, "felipe", "felipe@.com" , new Date() , 450.0 , department)	;
+		sellerDao.insert(newSeller);
+		System.out.println("Insertsd! New id = "+ newSeller.getId());
 		
 	}
 }
