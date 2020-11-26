@@ -13,17 +13,10 @@ public class Program {
 		// TODO Auto-generated 
 		
 		
-		Department obj = new Department (1 ,"Books");
-		
-		Seller seller  = new Seller(12 , "bob", "bob@gmail.com" , new Date(), 3000.0 , obj);
-		
 		SellerDao sellerDao = DaoFactory.createSellerDao();	
-		
+		Seller seller = sellerDao.findById(3);
 		System.out.println(seller);
 		
-		
-		
-		System.out.println(obj);
 	}
 
 }
